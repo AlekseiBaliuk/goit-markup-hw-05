@@ -57,9 +57,9 @@ img {
 }
 
 /* 
-=========================
-Header
-========================= 
+||=========================
+||  Header
+||========================= 
 */
 
 .header {
@@ -381,6 +381,8 @@ Header
     height: 44px;
     border-radius: 50%;
     fill: var(--icon-color);
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .member-icon-link:hover,
@@ -423,6 +425,8 @@ Header
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     fill: var(--icon-color);
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-list:not(:last-child) {
@@ -457,6 +461,8 @@ Header
     cursor: pointer;
     border-radius: 4px;
     border: none;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter-item{
@@ -520,7 +526,6 @@ Header
     height: 100%;
     
     background-color: rgba(33, 150, 243, 0.9);
-    /* opacity: 0; */
 
     transform: translateY(100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -611,6 +616,8 @@ Header
     color: var(--main-white-color);
     font-size: 14px;
     line-height: 1.71;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-address .link:hover,
@@ -663,6 +670,8 @@ Header
 
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-icon {
@@ -686,6 +695,7 @@ Header
 
     background-color: rgba(0, 0, 0, 0.2);
     opacity: 1;
+    visibility: visible;
 
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -693,6 +703,7 @@ Header
 .backdrop.is-hidden {
     opacity: 0;
     pointer-events: none;
+    visibility: hidden;
 }
 
 .backdrop.is-hidden .modal {
